@@ -1,0 +1,56 @@
+-- JavaScript --
+
+== Comandos de Arrays == 
+
+lista.includes('elemento B') // retorna se um array tem ou não um certo elemento
+listaNomes.push('renan') adiciona um elemento a lista
+listaNomes.pop() deleta um elemento da lista
+listaNomes.reverse() inverte os elementos da lista
+console.log(lista.length)  mostra o tamanho da lista
+listaNotas.map((itemGenerico) => { map percorre os elementos da lista
+    let numero = itemGenerico + 1 adicionando mais um número pra toda lista
+    //console.log(numero)
+}) 
+
+=======
+== Comandos de Arrays BASICOS ==
+
+== Tamanho do array ==:
+console.log(lista.length)  mostra o tamanho da lista
+
+== Adicionar e Remover Elementos ==:
+listaNomes.pop() deleta um elemento da lista
+lista.shift() remove o primeiro item do array
+listaNomes.push('renan') adiciona um elemento a lista
+lista.unshift('primeiro') adiciona um ou mais itens no inicio do array
+listaNomes.reverse() inverte os elementos da lista
+
+== Buscar e verificar ==:
+lista.includes('elemento B') // retorna se um array tem ou não um certo elemento
+lista.indexof('B') retorna a posição (indice) do elemento. Retorna -1 se n encontrar
+
+== Percorrer e Transformar ==:
+lista.forEach(item => console.log(item)) executa uma ação simples para cada item do array
+                                         (substitui o loop for comum)
+listaNotas.map((itemGenerico) => { map percorre os elementos da lista
+    let numero = itemGenerico + 1 adicionando mais um número pra toda lista
+    //console.log(numero)
+})
+lista.join('-'(ficaria = '2026-05-10')) junta todos os elementos em uma unica string usando um separador
+lista.slice(0,2(ficaria = [10,20])) copia um pedaço do array sem alterar o original
+lista.reduce((acc, nota) => acc + nota, 0) // percorre cada elemento do array pra acumular um valor total
+                          // acc guarda a soma acumulada ate o momento. 0 é o valor inicial do acumulador (acc)
+                          // nota representa a nota atual que está a ser processada na interação
+lista.filter(lista => lista.emEstoque === true)filtra o array retornando um novo array apenas com itens que atendem a uma condição
+== Loops ==
+
+for: for executa o código depois que for executado todo o loop
+while: enquanto alguma coisa for verdadeira vai continuar executando
+
+== Variaveis == 
+
+let, var, const
+
+let é usado para declarar variaveis que podem mudar de valor
+const é usado para declarar variaveis que não podem mudar de valor. Const não pode ser declarada sem valor inicial
+var é usado para declarar variaveis que podem mudar de valor. Var tem escopo global ou de função
